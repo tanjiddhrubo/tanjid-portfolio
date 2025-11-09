@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Aperture, Code, Cpu, Activity, User, Briefcase, Feather, BookOpen, Layers, Menu, X, Zap } from 'lucide-react'; // Icons from Lucide
+import { Aperture, Code, Cpu, Activity, User, Briefcase, Feather, BookOpen, Layers, Menu, X, Zap, Github } from 'lucide-react'; // Icons from Lucide
 
 // --- DATA STRUCTURE FROM CV ---
 
@@ -9,13 +9,14 @@ const profileData = {
     contact: {
         email: "tanjid.alam.dhrubo@gmail.com",
         phone: "+880 1631722133",
-        linkedin: "https://www.linkedin.com/in/tanjid-alam-dhrubo"
+        linkedin: "https://www.linkedin.com/in/tanjid-alam-dhrubo",
+        github: "https://github.com/tanjiddhrubo"
     },
     summary: "B.Sc. in Computer Science and Engineering with a strong focus on Machine Learning, AI, and Full-Stack Development. Proven ability to translate complex business logic into efficient, scalable applications, from HR & Payroll systems to mobile AI integration projects. Recipient of the Chairman's Distinguished Scholarship.",
     skills: {
         programming: ["C#", "Java", "Python", "C++", "Dart", "JavaScript", "HTML/CSS"],
         databases: ["PostgreSQL", "MySQL", "Firebase"],
-        competencies: ["Full-Stack Development", "Data Modeling", "CRUD Operations", "RESTful APIs", "Report Generation", "UI/UX Design", "Business Logic Implementation"],
+        competencies: ["Full-Stack Development", "Data Modeling",  "RESTful APIs",  "UI/UX Design", "Business Logic Implementation"],
     },
     education: {
         institution: "East Delta University",
@@ -53,8 +54,8 @@ const projects = [
         id: 'p3',
         title: "Ani-help - Pet Care System",
         type: "Full-Stack Mobile",
-        description: "Led the development of a pet care platform (Flutter/Firebase) for product purchases and online veterinarian consultation. Integrated real-time chat features to enhance user engagement.",
-        tags: ["Flutter", "Dart", "Firebase", "Real-Time Chat", "Project Management"],
+        description: "Led the development of a pet care platform for product purchases and online veterinarian consultation. Integrated real-time chat features to enhance user engagement.",
+        tags: ["Php", "MySQl", "Real-Time Chat", "Project Management"],
         featured: true
     },
     {
@@ -361,7 +362,7 @@ const Footer = () => (
             </p>
             
             <div className="flex flex-wrap justify-center gap-6">
-                <a href={`mailto:${profileData.contact.email}`} target="_blank" rel="noopener noreferrer"
+                <a href={`mailto:${profileData.contact.email}`} rel="noopener noreferrer"
                    className="flex items-center px-6 py-3 bg-indigo-600 rounded-lg text-white font-medium hover:bg-indigo-700 transition duration-300 transform hover:scale-105"
                 >
                     <Feather className="w-5 h-5 mr-2" /> Email Me
@@ -371,13 +372,18 @@ const Footer = () => (
                 >
                     <User className="w-5 h-5 mr-2" /> LinkedIn Profile
                 </a>
+                <a href={profileData.contact.github} target="_blank" rel="noopener noreferrer"
+                   className="flex items-center px-6 py-3 bg-gray-700 rounded-lg text-indigo-400 font-medium border border-indigo-600 hover:bg-gray-600 transition duration-300 transform hover:scale-105"
+                >
+                    <Github className="w-5 h-5 mr-2" /> GitHub Profile
+                </a>
                 <div className="flex items-center px-4 py-3 bg-gray-700/50 rounded-lg text-gray-300 font-medium">
                     <span className="text-sm font-light mr-2">Phone:</span> {profileData.contact.phone}
                 </div>
             </div>
             
             <p className="mt-12 text-sm text-gray-600">
-                &copy; {new Date().getFullYear()} Tanjid Alam Dhrubo. Designed minimally and built with React/Tailwind.
+                &copy; {new Date().getFullYear()} Tanjid Alam Dhrubo. 
             </p>
         </div>
     </footer>
