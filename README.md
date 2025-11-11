@@ -33,7 +33,7 @@ This portfolio showcases a variety of projects I've worked on. You'll find every
 
 I'm always open to new opportunities and collaborations. Feel free to reach out to me!
 
-*   **Email:** [tanjid.dhrubo@gmail.com](mailto:tanjid.dhrubo@gmail.com)
+*   **Email:** [tanjid.dhrubo@gmail.com](mailto:tanjid.alam.dhrubo@gmail.com)
 *   **LinkedIn:** [linkedin.com/in/tanjid-alam-dhrubo](https://www.linkedin.com/in/tanjid-alam-dhrubo/)
 *   **GitHub:** [github.com/tanjiddhrubo](https://github.com/tanjiddhrubo)
 
